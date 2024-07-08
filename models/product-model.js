@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/scatch")
 
 const productSchemea = mongoose.Schema({
     image:{
@@ -21,4 +20,4 @@ const productSchemea = mongoose.Schema({
     textcolor:String,
 });
 
-module.exports = mongoose.model("user", productSchemea);
+module.exports = mongoose.model("product", productSchemea);
